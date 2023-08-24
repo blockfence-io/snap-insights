@@ -4,15 +4,15 @@
   "proposedName": "Blockfence",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blockfence-io/snap-insights.git"
+    "url": "git+https://github.com/blockfence-io/snap-insights.git"
   },
   "source": {
-    "shasum": "LpAbVmOxHYVXJXK47TN3ynXGUI0WotptjyGXdXSQUrE=",
+    "shasum": "yLMKW9b3AoZebeLWVjll96r9bhbNAtgQUJofUWrY41o=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/icon.svg",
-        "packageName": "blockfence-insights",
+        "packageName": "@blockfence/blockfence-insights",
         "registry": "https://registry.npmjs.org/"
       }
     }
