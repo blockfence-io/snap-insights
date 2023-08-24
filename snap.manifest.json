@@ -7,12 +7,12 @@
     "url": "git+https://github.com/blockfence-io/snap-insights.git"
   },
   "source": {
-    "shasum": "yLMKW9b3AoZebeLWVjll96r9bhbNAtgQUJofUWrY41o=",
+    "shasum": "VB8xXeH/AJuteWg6tfyjO+WHQ+L9lVKke1H34c41DuY=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/icon.svg",
-        "packageName": "@blockfence/blockfence-insights",
+        "packageName": "blockfence-insights",
         "registry": "https://registry.npmjs.org/"
       }
     }
