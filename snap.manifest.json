@@ -1,13 +1,13 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Blockfence transaction insights",
   "proposedName": "Blockfence",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blockfence-io/snap.git"
+    "url": "https://github.com/blockfence-io/snap-insights.git"
   },
   "source": {
-    "shasum": "hIBxmJT45wG7HoAzHBPUpQS+0tdD8nstrgsoR2MOL9g=",
+    "shasum": "LpAbVmOxHYVXJXK47TN3ynXGUI0WotptjyGXdXSQUrE=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",

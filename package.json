@@ -1,11 +1,11 @@
 {
   "name": "blockfence-insights",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Blockfence transaction insights",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blockfence-io/snap.git"
+    "url": "https://github.com/blockfence-io/snap-insights.git"
   },
   "license": "(MIT-0 OR Apache-2.0)",
   "main": "src/index.ts",
