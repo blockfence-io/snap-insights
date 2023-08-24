@@ -2,6 +2,10 @@
 
 Metamask snap that enhances blockchain wallet security by providing insightful transaction analysis.
 
+## How to install?
+
+You can install the snap through: https://snap.blockfence.io/
+
 ## Developers Mode
 
 You can run the extensions in a development mode by running the following command:
