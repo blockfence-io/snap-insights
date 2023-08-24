@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0",
+  "description": "Blockfence transaction insights",
+  "proposedName": "Blockfence",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blockfence-io/snap.git"
+  },
+  "source": {
+    "shasum": "hIBxmJT45wG7HoAzHBPUpQS+0tdD8nstrgsoR2MOL9g=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "blockfence-insights",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:transaction-insight": {
+      "allowTransactionOrigin": true
+    },
+    "endowment:network-access": {}
+  },
+  "manifestVersion": "0.1"
+}
