@@ -8,7 +8,7 @@ import {
 import { Results } from './types/risks';
 
 const VERSION = '0.1.1';
-const API_ENDPOINT = 'https://api.blockfence.io/latest/analyze';
+const API_ENDPOINT = 'https://api.blockfence.io/prod/analyze';
 const PUBLIC_API_KEY = 'lHhg86klNV9jEZwdIUjB09C9UpmFflCB7HrThxaM';
 
 // Handle outgoing transactions.
