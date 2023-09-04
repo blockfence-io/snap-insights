@@ -20,4 +20,5 @@ In order to build a production version:
 ```shell
 npm install
 npm run build
+npm run serve
 ```

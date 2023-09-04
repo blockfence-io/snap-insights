@@ -4,7 +4,7 @@
   "proposedName": "Blockfence",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blockfence-io/snap-insights.git"
+    "url": "git+https://github.com/blockfence-io/snap-insights.git"
   },
   "source": {
     "shasum": "rdxH2+X+MAIDwnVQ0P/Dag8iZMSq56n5n1Mpp7qqI1c=",
