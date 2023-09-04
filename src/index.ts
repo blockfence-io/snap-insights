@@ -3,7 +3,7 @@ import {
   heading,
   panel,
   text,
-  // divider,
+  divider,
 } from '@metamask/snaps-ui';
 import { Results } from './types/risks';
 
@@ -61,10 +61,19 @@ export const onTransaction: OnTransactionHandler = async ({
 
   const data: Results = await response.json();
 
-  const formattedInsights = data.insights.map((insight) => [
-    text(`**${insight.title}**`),
-    text(insight.description),
-    // divider(),
+  const result = data.insights[0]
+  const insights = data.insights.slice(1)
+
+  const header = panel([
+    heading('Blockfence Analysis'),
+    text(`**${result.title}**`),
+    text(result.description),
+    divider(),
+  ])
+
+  const formattedInsights = insights.map((insight) => [
+    panel([text(`**${insight.title}**`),
+    text(insight.description),]),
   ]);
 
   const flatInsights = formattedInsights.reduce(
@@ -74,7 +83,7 @@ export const onTransaction: OnTransactionHandler = async ({
 
   // Display percentage of gas fees in the transaction insights UI.
   return {
-    content: panel([heading('Blockfence Analysis'), ...flatInsights]),
+    content: panel([header, ...flatInsights]),
   };
 };
 
