@@ -9,7 +9,7 @@ import { Results } from './types/risks';
 
 const VERSION = '0.1.1';
 const API_ENDPOINT = 'https://api.blockfence.io/prod/analyze';
-const PUBLIC_API_KEY = '6inVA3AEVe9KORFxuIU6r8xgrKiQ1O17myfbpuNa';
+const PUBLIC_API_KEY = 'lHhg86klNV9jEZwdIUjB09C9UpmFflCB7HrThxaM';
 
 // Handle outgoing transactions.
 export const onTransaction: OnTransactionHandler = async ({
