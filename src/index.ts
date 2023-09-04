@@ -1,13 +1,8 @@
 import { OnTransactionHandler } from '@metamask/snaps-types';
-import {
-  heading,
-  panel,
-  text,
-  divider,
-} from '@metamask/snaps-ui';
+import { heading, panel, text, divider } from '@metamask/snaps-ui';
 import { Results } from './types/risks';
 
-const VERSION = '0.1.1';
+const VERSION = '0.1.2';
 const API_ENDPOINT = 'https://api.blockfence.io/prod/analyze';
 const PUBLIC_API_KEY = 'lHhg86klNV9jEZwdIUjB09C9UpmFflCB7HrThxaM';
 
@@ -61,19 +56,18 @@ export const onTransaction: OnTransactionHandler = async ({
 
   const data: Results = await response.json();
 
-  const result = data.insights[0]
-  const insights = data.insights.slice(1)
+  const result = data.insights[0];
+  const insights = data.insights.slice(1);
 
   const header = panel([
     heading('Blockfence Analysis'),
     text(`**${result.title}**`),
     text(result.description),
     divider(),
-  ])
+  ]);
 
   const formattedInsights = insights.map((insight) => [
-    panel([text(`**${insight.title}**`),
-    text(insight.description),]),
+    panel([text(`**${insight.title}**`), text(insight.description)]),
   ]);
 
   const flatInsights = formattedInsights.reduce(
